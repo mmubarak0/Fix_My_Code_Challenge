@@ -2,7 +2,7 @@
 """Create geometries."""
 
 
-class square():
+class Square():
     """Base square class."""
 
     width = 0
@@ -14,7 +14,7 @@ class square():
             setattr(self, key, value)
 
     def area_of_my_square(self):
-        """ Area of the square """
+        """Area of the square."""
         return self.width * self.height
 
     def PermiterOfMySquare(self):
@@ -27,8 +27,8 @@ class square():
 
 
 if __name__ == "__main__":
-
-    s = square(width=12, height=9)
+    """Create object."""
+    s = Square(width=12, height=9)
     print(s)
     print(s.area_of_my_square())
     print(s.PermiterOfMySquare())
