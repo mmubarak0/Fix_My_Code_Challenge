@@ -1,28 +1,29 @@
 #!/usr/bin/python3
-"""Define geometry."""
+"""Create geometries."""
 
 
 class square():
-    """Square base class."""
+    """Base square class."""
 
     width = 0
+    height = 0
 
     def __init__(self, *args, **kwargs):
-        """Initialize the square."""
+        """Init method."""
         for key, value in kwargs.items():
             setattr(self, key, value)
 
     def area_of_my_square(self):
-        """Area of the square."""
-        return self.width * self.width
+        """ Area of the square """
+        return self.width * self.height
 
     def PermiterOfMySquare(self):
         """Permiter of my square."""
-        return 2 * (self.width * 2)
+        return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
-        """Str repr of square instance."""
-        return "{}/{}".format(self.width, self.width)
+        """Str repersentation of my square."""
+        return "{}/{}".format(self.width, self.height)
 
 
 if __name__ == "__main__":
